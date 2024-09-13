@@ -1,0 +1,106 @@
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-section label {
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-item img {
+  height: 30px;
+  width: 30px;
+}
+
+
+/* form-styles.css */
+
+/* Add red dashed borders between columns */
+.form-section {
+  border: 2px dashed red;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Add red dashed border under h4 headings */
+/* form-styles.css */
+
+/* Add red dashed borders between columns */
+.form-section {
+  border: 2px dashed red;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Full-width red dashed border under h4 headings */
+h4 {
+  color:red;
+  border-bottom: 2px dashed red;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  margin-left: -15px; /* Align the border with the container */
+  margin-right: -15px; /* Align the border with the container */
+  width: calc(100% + 30px); /* Extend the width to cover full container */
+}
+
+/* Add space between columns */
+.row {
+  margin-bottom: 20px;
+}
+
+/* Adjust spacing around the form */
+.container {
+  padding-top: 20px;
+}
+
+
+/* Add space between columns */
+.row {
+  margin-bottom: 20px;
+}
+
+/* Adjust spacing around the form */
+.container {
+  padding-top: 20px;
+}
+
+/* Style the submit button with a solid red color and align it to the right */
+.btn-submit {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.btn-submit:hover {
+  background-color: darkred; /* Darker red on hover */
+}
+
+.text-right {
+  text-align: right;
+}

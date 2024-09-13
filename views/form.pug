@@ -1,0 +1,92 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Flight Booking Form
+    link(rel='stylesheet' href='./css/form.css')
+    // Link to the external CSS file
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+  body
+    .container
+      // Image Heading Section
+      .text-center
+        img(src='/images/header.png' alt='Flight Booking' class='img-fluid')
+    .container
+      form(action='/form' method='POST' enctype='multipart/form-data')
+        .row
+          // Passenger Information
+          .col-4.form-section
+            h4 PASSENGER INFORMATION
+            .form-group
+              label(for='fullName')
+                | Full Name
+                span.required *
+              input#fullName.form-control(type='text' name='fullName')
+            .form-group
+              label(for='gender')
+                | Gender
+                span.required *
+              select#gender.form-control(name='gender' required='')
+                option(value='') --Select--
+                option(value='Male') Male
+                option(value='Female') Female
+            .form-group
+              label(for='dob')
+                | Date of Birth
+                span.required *
+              input#dob.form-control(type='date' name='dob')
+            .form-group
+              label(for='nationality')
+                | Nationality
+                span.required *
+              input#nationality.form-control(type='text' name='nationality')
+          // Contact Information
+          .col-4.form-section
+            h4 CONTACT INFORMATION
+            .form-group
+              label(for='phoneNumber')
+                | Phone Number
+                span.required *
+              input#phoneNumber.form-control(type='text' name='phoneNumber')
+            .form-group
+              label(for='email')
+                | Email Address
+                span.required *
+              input#email.form-control(type='email' name='email')
+            .form-group
+              label(for='poBox') P.O. BOX Number
+              input#poBox.form-control(type='text' name='poBox')
+            .form-group
+              label(for='emergencyPhoneNumber')
+                | Emergency Phone Number
+                span.required *
+              input#emergencyPhoneNumber.form-control(type='text' name='emergencyPhoneNumber')
+          // Flight Information
+          .col-4.form-section
+            h4 FLIGHT INFORMATION
+            .form-group
+              label(for='passportNumber')
+                | Passport Number
+                span.required *
+              input#passportNumber.form-control(type='text' name='passportNumber')
+            .form-group
+              label(for='visaDocument')
+                | Visa Document
+                span.required *
+              input#visaDocument.form-control-file(type='file' name='visaDocument')
+            .form-group
+              label(for='departureCity')
+                | Departure City
+                span.required *
+              input#departureCity.form-control(type='text' name='departureCity')
+            .form-group
+              label(for='destinationCity')
+                | Destination City
+                span.required *
+              input#destinationCity.form-control(type='text' name='destinationCity')
+        .text-center
+          button.btn.btn-primary(type='submit') Submit
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
